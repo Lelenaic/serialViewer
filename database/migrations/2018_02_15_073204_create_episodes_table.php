@@ -20,6 +20,7 @@ class CreateEpisodesTable extends Migration
             $table->foreign('saisonId')
                   ->references('id')->on('saisons')
                   ->onDelete('cascade');
+            $table->integer('minutes');
             $table->timestamps();
         });
     }
