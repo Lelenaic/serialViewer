@@ -1,6 +1,6 @@
 <?php
 
-namespace App;
+namespace SerialViewer;
 
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Foundation\Auth\User as Authenticatable;
