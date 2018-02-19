@@ -1,5 +1,5 @@
 <?php
-require_once('datas.php');
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -11,17 +11,6 @@ require_once('datas.php');
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/datas/series', 'SeriesController@all');
 
-Auth::routes();
-
-
-
-
-Route::get('/home', 'HomeController@index')->name('home');
-
-Route::get('/series', 'SeriesController@showAll');
-
-Route::get('/series/{id}', 'SeriesController@showOne');
+Route::get('/datas/series/genre/{idGenre}', 'SeriesController@showByGenre');
