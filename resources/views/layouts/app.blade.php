@@ -12,6 +12,8 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <!-- Jquery-ui -->
+    <link href="{{ asset('css/jquery-ui.min.css') }}" rel="Stylesheet"></link>
 </head>
 <body>
     <div id="app">
@@ -31,24 +33,28 @@
                     <a class="navbar-brand" href="{{ url('/') }}">
                         {{ config('app.name', 'SerialViewer') }}
                     </a>
-                    <ul class="nav nav-pills pull-right">
-                      <li class="{{ Request::is('/') ? 'active' : '' }}">
-                          <a href="{{ url('/') }}">Accueil</a>
-                      </li>
-                      <li class="{{ Request::is('series') ? 'active' : '' }}">
-                          <a href="{{ url('series') }}">Séries</a>
-                      </li>
-                    </ul>
+
                 </div>
 
                 <div class="collapse navbar-collapse" id="app-navbar-collapse">
                     <!-- Left Side Of Navbar -->
                     <ul class="nav navbar-nav">
                         &nbsp;
+                        <li class="{{ Request::is('/') ? 'active' : '' }}">
+                            <a href="{{ url('/') }}">Accueil</a>
+                        </li>
+                        <li class="{{ Request::is('series') ? 'active' : '' }}">
+                            <a href="{{ url('series') }}">Séries</a>
+                        </li>
                     </ul>
 
                     <!-- Right Side Of Navbar -->
                     <ul class="nav navbar-nav navbar-right">
+                        <li>
+                          <div class="ui-widget" style="margin-top: 10px; margin-right: 10px;">
+                            <input id="search-series" placeholder="Rechercher une série...">
+                          </div>
+                        </li>
                         <!-- Authentication Links -->
                         @guest
                             <li><a href="{{ route('login') }}">Connexion</a></li>
@@ -79,10 +85,13 @@
             </div>
         </nav>
 
+
         @yield('content')
     </div>
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}"></script>
+    <script src="{{ asset('js/jquery-ui.min.js') }}" ></script>
+    <script src="{{ asset('js/series/autocomplete-series.js') }}"></script>
 </body>
 </html>

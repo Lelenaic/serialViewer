@@ -29,4 +29,4 @@
     </div>
 </div>
 @endsection
-<script src="{{ URL::asset('/js/series.js') }}"></script>
+<script src="{{ URL::asset('/js/series/series.js') }}"></script>
