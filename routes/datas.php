@@ -14,3 +14,5 @@
 Route::get('/datas/series', 'SeriesController@all');
 
 Route::get('/datas/series/genre/{idGenre}', 'SeriesController@showByGenre');
+
+Route::post('/datas/addSuiviSerie', 'SuiviSerieController@insert');

@@ -18,7 +18,7 @@
             <div class="panel panel-default clearfix">
                 <div class="panel-heading">
                   {{ $serie['nom'] }}
-                  <button class="btn btn-primary btn-sm pull-right"><b>Ajouter à "Mes séries"</b></button>
+                  <button class="btn btn-primary btn-sm pull-right" onclick="addFollowSerie({{ $serie['id'] }}, {{ Auth::user()->id }})"><b>Ajouter à "Mes séries"</b></button>
                 </div>
                 <div class="panel-body">
                   <img src="{{ $serie['urlImage'] }}"></img>
@@ -28,4 +28,6 @@
         </div>
     </div>
 </div>
+
 @endsection
+<script src="{{ URL::asset('/js/series/seriePage.js') }}"></script>
