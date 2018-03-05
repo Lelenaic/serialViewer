@@ -14,6 +14,11 @@
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <!-- Jquery-ui -->
     <link href="{{ asset('css/jquery-ui.min.css') }}" rel="Stylesheet"></link>
+
+    <!-- font awesome -->
+    <!--<link href="{{ asset('css/font-awesome.min.css') }}" rel="Stylesheet"></link>-->
+    <link href="{{ asset('css/stars.css') }}" rel="Stylesheet"></link>
+    <!--<script src="{{ asset('js/fontawesome-all.min.js') }}"></script>-->
 </head>
 <body>
     <div id="app">

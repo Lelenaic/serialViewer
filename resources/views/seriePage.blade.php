@@ -10,7 +10,10 @@
                 <label>Nom : </label> {{ $serie['nom'] }}<br>
                 <label>Date :</label><br>
                 <label>Nationalité :</label><br>
-                <label>Note :</label><br>
+                <label>Note :</label> <div class="stars-outer">
+          <div class="stars-inner"></div>
+        </div>
+                <!--<i class="far fa-star fa-lg"></i>--><br>
               </div>
           </div>
       </div>

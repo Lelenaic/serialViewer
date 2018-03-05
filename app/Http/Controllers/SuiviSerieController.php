@@ -18,7 +18,7 @@ class SuiviSerieController extends Controller
       var_dump($request);
       $suivi->save();
 
-      $newSuivi = Todos::find($suivi->id);
+      $newSuivi = SuiviSerie::find($suivi->id);
 
       return $newSuivi;
 

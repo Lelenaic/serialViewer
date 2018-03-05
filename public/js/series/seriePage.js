@@ -19,42 +19,22 @@ function addFollowSerie(serieId,userId){
   today = yyyy + '-' + mm + '-' + dd;
 
   var datas = {
-    userId: userId,
-    serieId: serieId,
-    dateDebut: today,
-    fini: false
+    "userId": userId,
+    "serieId": serieId,
+    "dateDebut": today,
+    "fini": 0
   }
-  /*var token = $('meta[name=csrf-token]').attr('content');
+  
   $.ajax({
-
     type:'POST',
     url:"/datas/addSuiviSerie",
     dataType: 'JSON',
-    data: {
-        "userId": userId,
-        "serieId": serieId,
-        "dateDebut": today,
-        "fini": false,
-        "created_at": today,
-        "updated_at": today
-    },
+    data: datas,
     success:function(data){
         console.log('success');
-        console.log(data);
     },
     error:function(){
 
     },
-});*/
-  /*var response = $.post('/datas/addSuiviSerie',
-    {
-        '_token': $('meta[name=csrf-token]').attr('content'),
-        userId: userId,
-        serieId: serieId,
-        dateDebut: today,
-        fini: false,
-        created_at: today,
-        updated_at: today
-    });
-    console.log(response);*/
+});
 }

@@ -9,4 +9,6 @@ class SuiviSerie extends Model
   protected $casts = [
       'fini' => 'boolean'
   ];
+  protected $table = "suivi_serie";
+
 }
