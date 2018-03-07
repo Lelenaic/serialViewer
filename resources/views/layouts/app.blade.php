@@ -19,6 +19,8 @@
     <!--<link href="{{ asset('css/font-awesome.min.css') }}" rel="Stylesheet"></link>-->
     <link href="{{ asset('css/stars.css') }}" rel="Stylesheet"></link>
     <!--<script src="{{ asset('js/fontawesome-all.min.js') }}"></script>-->
+    <script src="{{ asset('js/app.js') }}"></script>
+    <script src="{{ asset('js/jquery-ui.min.js') }}" ></script>
 </head>
 <body>
     <div id="app">
@@ -95,8 +97,6 @@
     </div>
 
     <!-- Scripts -->
-    <script src="{{ asset('js/app.js') }}"></script>
-    <script src="{{ asset('js/jquery-ui.min.js') }}" ></script>
     <script src="{{ asset('js/series/autocomplete-series.js') }}"></script>
 </body>
 </html>

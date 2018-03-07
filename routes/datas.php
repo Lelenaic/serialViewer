@@ -16,3 +16,7 @@ Route::get('/datas/series', 'SeriesController@all');
 Route::get('/datas/series/genre/{idGenre}', 'SeriesController@showByGenre');
 
 Route::post('/datas/addSuiviSerie', 'SuiviSerieController@insert');
+
+Route::post('/datas/addRateSerie', 'NoteSerieController@insert');
+Route::get('/datas/notes/{userId}/{serieId}', 'NoteSerieController@getByUserSerie');
+Route::get('/datas/notes/{serieId}', 'NoteSerieController@getBySerie');
