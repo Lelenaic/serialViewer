@@ -43,7 +43,7 @@ class SeriesController extends Controller
         'series' => $series,
         'genres' => $genres
       ];
-      return view('series',$parameters);
+      return view('serie.series',$parameters);
   }
 
   /**
@@ -78,7 +78,7 @@ class SeriesController extends Controller
       $parameters = [
         'serie' => $serie
       ];
-      return view('seriePage',$parameters);
+      return view('serie.seriePage',$parameters);
 
   }
 }

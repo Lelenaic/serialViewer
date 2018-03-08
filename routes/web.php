@@ -22,3 +22,6 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/series', 'SeriesController@showAll');
 
 Route::get('/series/{id}', 'SeriesController@showOne');
+
+Route::get('/currentUser/{id}', 'UsersController@currentUser');
+Route::get('/users/{id}', 'UsersController@showOne');
