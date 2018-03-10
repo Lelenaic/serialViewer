@@ -8,7 +8,12 @@ $.get('/datas/notes/'+serId, function(response){
     finalRate += noteSerie.note;
   });
   finalRate = finalRate/nbRates;
-  $('#finalRate').text(finalRate);
+  
+  if(isNaN(finalRate)){
+    $('#finalRate').text("x");
+  }else{
+    $('#finalRate').text(finalRate);
+  }
 });
 
 /*

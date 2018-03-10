@@ -18,11 +18,13 @@
             <div class="panel panel-default">
                 <div class="panel-heading">Toutes les séries</div>
                 <div class="panel-body" id="displaySeries">
-                  <ul>
-                    @foreach ($series as $serie)
-                      <li><a href="{{ url('series/'.$serie['id']) }}">{{ $serie['nom'] }}</a></li>
-                    @endforeach
-                  </ul>
+                  @foreach ($series as $serie)
+                    <div class="col-md-3">
+                      <a href="{{ url('series/'.$serie['id']) }}">
+                        <img class="img" src="{{ asset($serie['urlImage']) }}"></img>
+                      </a>
+                    </div>
+                  @endforeach
                 </div>
             </div>
         </div>

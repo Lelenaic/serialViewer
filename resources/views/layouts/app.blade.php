@@ -12,12 +12,13 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/all.css') }}" rel="stylesheet">
     <!-- Jquery-ui -->
     <link href="{{ asset('css/jquery-ui.min.css') }}" rel="Stylesheet"></link>
 
     <!-- font awesome -->
     <!--<link href="{{ asset('css/font-awesome.min.css') }}" rel="Stylesheet"></link>-->
-    <link href="{{ asset('css/stars.css') }}" rel="Stylesheet"></link>
+    <link href="{{ asset('font-awesome/css/font-awesome.min.css') }}" rel="Stylesheet"></link>
     <!--<script src="{{ asset('js/fontawesome-all.min.js') }}"></script>-->
     <script src="{{ asset('js/app.js') }}"></script>
     <script src="{{ asset('js/jquery-ui.min.js') }}" ></script>
@@ -47,9 +48,6 @@
                     <!-- Left Side Of Navbar -->
                     <ul class="nav navbar-nav">
                         &nbsp;
-                        <li class="{{ Request::is('/') ? 'active' : '' }}">
-                            <a href="{{ url('/') }}">Accueil</a>
-                        </li>
                         <li class="{{ Request::is('series') ? 'active' : '' }}">
                             <a href="{{ url('series') }}">Séries</a>
                         </li>
@@ -74,6 +72,8 @@
 
                                 <ul class="dropdown-menu">
                                     <li>
+                                        <a href="{{ url('/user/'.Auth::user()->id) }}">Mon profil</a>
+                                        <a href="{{ url('/user/friends/'.Auth::user()->id) }}">Mes amis</a>
                                         <a href="{{ route('logout') }}"
                                             onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">

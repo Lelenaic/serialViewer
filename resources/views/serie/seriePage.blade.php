@@ -41,8 +41,8 @@
                   {{ $serie['nom'] }}
                   <button class="btn btn-primary btn-sm pull-right" onclick="addFollowSerie({{ $serie['id'] }}, {{ Auth::user()->id }})"><b>Ajouter à "Mes séries"</b></button>
                 </div>
-                <div class="panel-body">
-                  <img src="{{ $serie['urlImage'] }}"></img>
+                <div class="panel-body text-center">
+                  <p><img class="img" src="{{ $serie['urlImage'] }}"></img></p>
                   {{ $serie['resume'] }}
                 </div>
             </div>

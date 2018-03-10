@@ -23,5 +23,7 @@ Route::get('/series', 'SeriesController@showAll');
 
 Route::get('/series/{id}', 'SeriesController@showOne');
 
-Route::get('/currentUser/{id}', 'UsersController@currentUser');
-Route::get('/users/{id}', 'UsersController@showOne');
+Route::get('/user/{id}', 'UserController@showOne');
+Route::get('/user/friends/{id}', 'UserController@showFriends');
+//Route::get('/currentUser/{id}', 'UsersController@currentUser');
+//Route::get('/users/{id}', 'UsersController@showOne');

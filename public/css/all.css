@@ -1,0 +1,11 @@
+.img {
+    width: 210px;
+    height: 300px;
+    margin-top: 10px;
+}
+
+.img-big {
+    width: 300px;
+    height: 450px;
+    margin-top: 10px;
+}
