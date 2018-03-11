@@ -73,6 +73,7 @@
                                 <ul class="dropdown-menu">
                                     <li>
                                         <a href="{{ url('/user/'.Auth::user()->id) }}">Mon profil</a>
+                                        <a href="{{ url('/user/series/'.Auth::user()->id) }}">Mes séries</a>
                                         <a href="{{ url('/user/friends/'.Auth::user()->id) }}">Mes amis</a>
                                         <a href="{{ route('logout') }}"
                                             onclick="event.preventDefault();

@@ -36,4 +36,19 @@ class UserController extends Controller
       return view('user.friends',$parameters);
 
   }
+
+  /**
+   * Show one profil.
+   *
+   *
+   */
+  public function showSeries(Request $request, $id)
+  {
+      $user = User::find($id);
+      $parameters = [
+        'user' => $user
+      ];
+      return view('user.mySeries',$parameters);
+
+  }
 }

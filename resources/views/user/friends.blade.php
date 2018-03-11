@@ -22,5 +22,5 @@
         </div>
     </div>
 </div>
-<script src="{{ URL::asset('/js/series/seriePage.js') }}"></script>
+
 @endsection
