@@ -38,7 +38,7 @@ class UserController extends Controller
   }
 
   /**
-   * Show one profil.
+   * Show series followed by a user
    *
    *
    */
@@ -49,6 +49,21 @@ class UserController extends Controller
         'user' => $user
       ];
       return view('user.mySeries',$parameters);
+
+  }
+
+  /**
+   * Trends of friends a user
+   *
+   *
+   */
+  public function trendsFriends(Request $request, $id)
+  {
+      $user = User::find($id);
+      $parameters = [
+        'user' => $user
+      ];
+      return view('user.trendsFriends',$parameters);
 
   }
 }

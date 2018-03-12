@@ -51,6 +51,9 @@
                         <li class="{{ Request::is('series') ? 'active' : '' }}">
                             <a href="{{ url('series') }}">Séries</a>
                         </li>
+                        <li class="{{ Request::is('trendsFriends/'.Auth::user()->id) ? 'active' : '' }}">
+                            <a href="{{ url('trendsFriends/'.Auth::user()->id) }}">Intérêts amis</a>
+                        </li>
                     </ul>
 
                     <!-- Right Side Of Navbar -->
