@@ -8,6 +8,6 @@ RUN echo "create database if not exists laravel;" | mysql -hmariadb -uroot -p$MA
 RUN composer install --no-dev
 RUN cp .env.example .env
 RUN php artisan key:generate
-RUN php artisan migrate --seed
+RUN php artisan migrate
 
 CMD php artisan serve --host=0.0.0.0
