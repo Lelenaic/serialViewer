@@ -126,7 +126,7 @@ class SeriesTableSeeder extends Seeder
           'resume' => "A Westworld, un parc d'attractions dernier cri, les visiteurs paient des fortunes pour revivre le frisson de la conquête de l'Ouest. Dolores, Teddy et bien d'autres sont des androïdes à apparence humaine créés pour donner l'illusion et offrir du dépaysement aux clients. Pour ces derniers, Westworld est l'occasion de laisser libre-cours à leurs fantasmes.",
           'nationalite' => 'Etats-Unis',
           'anneeDebut' => '2016',
-          'urlImage' => '/images/my-hero-academia.jpg',
+          'urlImage' => '/images/westworld.jpg',
           'created_at' => date('Y-m-d H:i:s'),
           'updated_at' => date('Y-m-d H:i:s')
         ]);

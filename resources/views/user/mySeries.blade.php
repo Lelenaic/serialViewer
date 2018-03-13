@@ -5,7 +5,7 @@
     <div class="row">
         <div class="col-md-12" >
             <div class="panel panel-default clearfix">
-              <div class="panel-heading" style="">Amis de {{ $user['name'] }}
+              <div class="panel-heading" style="">Mes séries
                 <div class="ui-widget pull-right" >
                   <input id="search-user" placeholder="Rechercher dans mes séries...">
                 </div>

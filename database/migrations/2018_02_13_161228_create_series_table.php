@@ -18,7 +18,7 @@ class CreateSeriesTable extends Migration
             $table->string('nom');
             $table->text('resume');
             $table->string('nationalite');
-            $table->date('dateDebut');
+            $table->string('anneeDebut');
             $table->string('urlImage');
             $table->timestamps();
         });
