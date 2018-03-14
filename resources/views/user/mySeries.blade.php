@@ -36,6 +36,36 @@
                          Episode 2
                          <i class="fa fa-eye fa-2x pull-right" aria-hidden="true"></i>
                        </li>
+                       <li class="list-group-item episode-item">
+                         <i class="fa fa-play" aria-hidden="true"></i>
+                         Episode 3
+                         <i class="fa fa-eye fa-2x pull-right" aria-hidden="true"></i>
+                       </li>
+                       <li class="list-group-item episode-item">
+                         <i class="fa fa-play" aria-hidden="true"></i>
+                         Episode 4
+                         <i class="fa fa-eye fa-2x pull-right" aria-hidden="true"></i>
+                       </li>
+                       <li class="list-group-item episode-item">
+                         <i class="fa fa-play" aria-hidden="true"></i>
+                         Episode 5
+                         <i class="fa fa-eye fa-2x pull-right" aria-hidden="true"></i>
+                       </li>
+                       <li class="list-group-item episode-item">
+                         <i class="fa fa-play" aria-hidden="true"></i>
+                         Episode 6
+                         <i class="fa fa-eye fa-2x pull-right" aria-hidden="true"></i>
+                       </li>
+                       <li class="list-group-item episode-item">
+                         <i class="fa fa-play" aria-hidden="true"></i>
+                         Episode 7
+                         <i class="fa fa-eye fa-2x pull-right" aria-hidden="true"></i>
+                       </li>
+                       <li class="list-group-item episode-item">
+                         <i class="fa fa-play" aria-hidden="true"></i>
+                         Episode 8
+                         <i class="fa fa-eye fa-2x pull-right" aria-hidden="true"></i>
+                       </li>
                      </div>
                    </div>
                    <div id="season2">
