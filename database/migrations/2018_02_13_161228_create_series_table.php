@@ -17,6 +17,8 @@ class CreateSeriesTable extends Migration
             $table->increments('id');
             $table->string('nom');
             $table->text('resume');
+            $table->string('nationalite');
+            $table->string('anneeDebut');
             $table->string('urlImage');
             $table->timestamps();
         });

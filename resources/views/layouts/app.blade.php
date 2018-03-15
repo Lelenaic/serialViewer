@@ -48,23 +48,30 @@
                     <!-- Left Side Of Navbar -->
                     <ul class="nav navbar-nav">
                         &nbsp;
+                        @guest
+
+                        @else
                         <li class="{{ Request::is('series') ? 'active' : '' }}">
                             <a href="{{ url('series') }}">Séries</a>
                         </li>
+                        <li class="{{ Request::is('trendsFriends/'.Auth::user()->id) ? 'active' : '' }}">
+                            <a href="{{ url('trendsFriends/'.Auth::user()->id) }}">Intérêts amis</a>
+                        </li>
+                        @endguest
                     </ul>
 
                     <!-- Right Side Of Navbar -->
                     <ul class="nav navbar-nav navbar-right">
-                        <li>
-                          <div class="ui-widget" style="margin-top: 10px; margin-right: 10px;">
-                            <input id="search-series" placeholder="Rechercher une série...">
-                          </div>
-                        </li>
                         <!-- Authentication Links -->
                         @guest
                             <li><a href="{{ route('login') }}">Connexion</a></li>
                             <li><a href="{{ route('register') }}">Enregistrer</a></li>
                         @else
+                            <li>
+                              <div class="ui-widget" style="margin-top: 10px; margin-right: 10px;">
+                                <input id="search-series" placeholder="Rechercher une série...">
+                              </div>
+                            </li>
                             <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" aria-haspopup="true">
                                     {{ Auth::user()->name }} <span class="caret"></span>

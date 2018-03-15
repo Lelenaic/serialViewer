@@ -10,7 +10,7 @@
                   <input id="search-user" placeholder="Ajouter un ami...">
                 </div>
               </div>
-              <div id="genre-block" class="panel-body">
+              <div class="panel-body">
                 <ul class="list-group">
                  <li class="list-group-item">TestUser <span class="badge"><i class="fa fa-times" aria-hidden="true"></i></span></li>
                  <li class="list-group-item">FanSerie <span class="badge"><i class="fa fa-times" aria-hidden="true"></i></span></li>

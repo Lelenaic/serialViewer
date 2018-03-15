@@ -9,8 +9,8 @@
               <div class="panel-heading">Informations</div>
               <div id="genre-block" class="panel-body">
                 <label>Nom : </label> {{ $serie['nom'] }}<br>
-                <label>Date :</label><br>
-                <label>Nationalité :</label><br>
+                <label>Année de début :</label> {{ $serie['anneeDebut'] }}<br>
+                <label>Nationalité :</label> {{ $serie['nationalite'] }}<br>
                 <label>Note :</label> <span id="finalRate"></span>/5<br>
                 <button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#ModalAddRate" onclick="getRateSerie({{ $serie['id'] }}, {{ Auth::user()->id }})"><b>Donner une note</b></button><br>
 

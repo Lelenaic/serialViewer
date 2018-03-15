@@ -5,7 +5,7 @@
     <div class="row">
         <div class="col-md-12" >
             <div class="panel panel-default clearfix">
-              <div class="panel-heading" style="">Amis de {{ $user['name'] }}
+              <div class="panel-heading" style="">Mes séries
                 <div class="ui-widget pull-right" >
                   <input id="search-user" placeholder="Rechercher dans mes séries...">
                 </div>
@@ -34,6 +34,36 @@
                        <li class="list-group-item episode-item">
                          <i class="fa fa-play" aria-hidden="true"></i>
                          Episode 2
+                         <i class="fa fa-eye fa-2x pull-right" aria-hidden="true"></i>
+                       </li>
+                       <li class="list-group-item episode-item">
+                         <i class="fa fa-play" aria-hidden="true"></i>
+                         Episode 3
+                         <i class="fa fa-eye fa-2x pull-right" aria-hidden="true"></i>
+                       </li>
+                       <li class="list-group-item episode-item">
+                         <i class="fa fa-play" aria-hidden="true"></i>
+                         Episode 4
+                         <i class="fa fa-eye fa-2x pull-right" aria-hidden="true"></i>
+                       </li>
+                       <li class="list-group-item episode-item">
+                         <i class="fa fa-play" aria-hidden="true"></i>
+                         Episode 5
+                         <i class="fa fa-eye fa-2x pull-right" aria-hidden="true"></i>
+                       </li>
+                       <li class="list-group-item episode-item">
+                         <i class="fa fa-play" aria-hidden="true"></i>
+                         Episode 6
+                         <i class="fa fa-eye fa-2x pull-right" aria-hidden="true"></i>
+                       </li>
+                       <li class="list-group-item episode-item">
+                         <i class="fa fa-play" aria-hidden="true"></i>
+                         Episode 7
+                         <i class="fa fa-eye fa-2x pull-right" aria-hidden="true"></i>
+                       </li>
+                       <li class="list-group-item episode-item">
+                         <i class="fa fa-play" aria-hidden="true"></i>
+                         Episode 8
                          <i class="fa fa-eye fa-2x pull-right" aria-hidden="true"></i>
                        </li>
                      </div>
